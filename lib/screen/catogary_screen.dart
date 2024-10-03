@@ -55,7 +55,7 @@ class _CatogaryScreenState extends State<CatogaryScreen> {
                       textStyle: const TextStyle(color: Colors.white),
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 19),
                   Container(
                     height: 50,
                     width: 150,
@@ -74,7 +74,7 @@ class _CatogaryScreenState extends State<CatogaryScreen> {
                   const SizedBox(
                     height: 20,
                   ),
-                  Container(
+                 Container(
                     width: 300,
                     child: CustomTextField(
                       labelText: 'Enter Your Email',

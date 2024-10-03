@@ -15,12 +15,12 @@ class CustomTextField extends StatelessWidget {
   final FocusNode? focusNode;
   final String? Function(String?)? validator;
   final void Function(String?)? onFieldSubmitted;
-  final String? obscureText; // Make obscureText optional
+  final String? obscureText; 
   final String obscuringCharacter;
-  final void Function()? onSuffixIconPressed; // Added onSuffixIconPressed
+  final void Function()? onSuffixIconPressed; 
   final bool readOnly;
   final bool enabled;
-  final void Function(String)? onChanged; // Added onChanged callback
+  final void Function(String)? onChanged; 
   final String? initialValue;
   final String? value;
   final int? width;
@@ -47,7 +47,7 @@ class CustomTextField extends StatelessWidget {
       this.value,
       this.hight,
       this.width,
-      this.onChanged, // Include onChanged in the constructor
+      this.onChanged, 
       this.initialValue});
 
   @override
@@ -58,7 +58,7 @@ class CustomTextField extends StatelessWidget {
       keyboardType: keyboardType,
       maxLength: maxLength,
       inputFormatters: inputFormatters,
-      onChanged: onChanged, // Use the onChanged callback here
+      onChanged: onChanged, 
       decoration: InputDecoration(
         filled: filled,
         fillColor: fillColor,
@@ -68,13 +68,13 @@ class CustomTextField extends StatelessWidget {
                 icon: Icon(suffixIcon),
                 onPressed: onSuffixIconPressed != null
                     ? () {
-                        // Use the custom onPressed function, if provided
+                       
                         onSuffixIconPressed!();
                       }
                     : () {
-                        // Default toggle functionality for obscuring text
+                       
                         if (obscureText != null) {
-                          // obscureText!.value = !obscureText!.value;
+                          
                         }
                       },
               )

@@ -7,7 +7,7 @@ class CustomAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
-      leading: Icon(Icons.menu, color: Colors.grey),
+      leading:  const Icon(Icons.menu, color: Colors.grey),
       primary: false,
       title: TextField(
         decoration: InputDecoration(
@@ -16,9 +16,9 @@ class CustomAppbar extends StatelessWidget {
             
           },
           
-          child: Icon(Icons.search)),
+          child:  const Icon(Icons.search)),
           hintText: "Search",
-          hintStyle: TextStyle(color: Colors.grey),
+          hintStyle:  const TextStyle(color: Colors.grey),
           border: OutlineInputBorder(
               borderSide: BorderSide(
                 color: Colors.blue,
@@ -31,7 +31,7 @@ class CustomAppbar extends StatelessWidget {
       
         IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const  Icon(
               Icons.notifications,
               color: Colors.red,
             ))
